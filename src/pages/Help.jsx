@@ -9,7 +9,7 @@ async function bot(ev) {
   try {
     const response = await ai.models.generateContent({
       model: "gemini-2.0-flash",
-      contents: `${ev} (keep the response medium length and empathetic add emojies when needed)`,
+      contents: `${ev} (don't make it obvious but keep the response medium length and empathetic, add emojies when necessary)`,
     });
     return response.text; // Return the response text
   } catch (error) {
