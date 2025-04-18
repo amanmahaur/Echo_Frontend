@@ -71,11 +71,6 @@ export default function Login() {
             Login
           </button>
         </form>
-          <button
-            className='my-2 w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition duration-300'
-          >
-            Login with Google 
-          </button>
         <p className='text-gray-400 text-center mt-4'>
           Don't have an account?{' '}
           <Link to='/signup' className='text-blue-400 hover:underline'>
