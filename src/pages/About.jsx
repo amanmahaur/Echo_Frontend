@@ -19,7 +19,7 @@ export default function About() {
         <li>❓ <strong>Quiz Section:</strong> Quick MCQs to assess mental health daily.</li>
         <li>🌟 <strong>Daily Challenges:</strong> Personalized tasks to boost mood and encourage healthy habits.</li>
         <li>🤖 <strong>Chatbot Help:</strong> Instant, empathetic support and suggestions.</li>
-        <li>⚠️ <strong>Friend Alerts:</strong> When mental health levels are critical, the app can notify trusted contacts.</li>
+{/*         <li>⚠️ <strong>Friend Alerts:</strong> When mental health levels are critical, the app can notify trusted contacts.</li> */}
       </ul>
 
       <p className='text-gray-300 text-lg text-center max-w-3xl leading-relaxed mt-8'>
