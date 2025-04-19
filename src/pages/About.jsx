@@ -15,10 +15,10 @@ export default function About() {
       <ul className='text-gray-300 text-lg mt-4 space-y-4 max-w-3xl'>
         <li>📝 <strong>Journal:</strong> Write daily thoughts and emotions through free-form journal entries.</li>
         
-        <li>📈 <strong>Emotions Graphs:</strong> Check your mental health levels for a better understanding of  yourself.</li>
-        <li>❓ <strong>Quiz Section:</strong> Quick MCQs to assess mental health daily.</li>
         <li>🌟 <strong>Daily Challenges:</strong> Personalized tasks to boost mood and encourage healthy habits.</li>
         <li>🤖 <strong>Chatbot Help:</strong> Instant, empathetic support and suggestions.</li>
+        <li>❓ <strong>Quiz Section:</strong> Quick quiz to assess mental health daily.</li>
+        <li>📈 <strong>Emotions Graphs:</strong> Check your mental health levels for a better understanding of  yourself.</li>
 {/*         <li>⚠️ <strong>Friend Alerts:</strong> When mental health levels are critical, the app can notify trusted contacts.</li> */}
       </ul>
 
