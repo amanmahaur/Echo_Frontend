@@ -102,7 +102,7 @@ export default function DailyChallenges() {
   };
 
   return (
-    <div className='my-2 bg-gradient-to-r from-[#181923] to-[#343656] h-screen flex flex-col justify-baseline items-center p-6'>
+    <div className=' bg-gradient-to-r from-[#181923] to-[#343656] h-screen flex flex-col justify-baseline items-center p-6'>
       <h1 className='my-5 text-white text-4xl'>Daily Challenges</h1>
 
       {loading ? (
@@ -110,9 +110,9 @@ export default function DailyChallenges() {
       ) : error ? (
         <p className='text-red-500'>{error}</p>
       ) : (
-        <div className='w-full my-2 max-w-2xl bg-gray-800 p-6 rounded-lg shadow-lg'>
+        <div className='w-full max-w-2xl bg-gray-800 p-6 rounded-lg shadow-lg'>
           <h2 className='text-white text-2xl mb-4'>Your Challenges for Today</h2>
-          <ul className='space-y-4 my-2'>
+          <ul className='space-y-4 '>
             {challenges.map((challenge, index) => (
               <li
                 key={index}
