@@ -102,7 +102,7 @@ export default function DailyChallenges() {
   };
 
   return (
-    <div className='bg-gradient-to-r from-[#181923] to-[#343656] h-screen flex flex-col justify-baseline items-center p-6'>
+    <div className='my-2 bg-gradient-to-r from-[#181923] to-[#343656] h-screen flex flex-col justify-baseline items-center p-6'>
       <h1 className='my-5 text-white text-4xl'>Daily Challenges</h1>
 
       {loading ? (
