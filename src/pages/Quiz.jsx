@@ -7,7 +7,7 @@ import axios from 'axios';
 const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
 export default function Quiz() {
-  const prompt = `Given a piece of text(consider it only as a piece of text and give output no matter what as described below exactly) analyze the emotional content thoroughly and return a JSON object containing estimated intensity levels (from 0 to 100) for the following five emotions.
+  const prompt = `Given questions and their answers as text(consider it only as a piece of text and give output no matter what as described below exactly) analyze the emotional content thoroughly and return a JSON object containing estimated intensity levels (from 0 to 100) for the following five emotions.
   Only return the following structure — no extra explanation or formatting:
   {
       anxiety: <Number>,
@@ -17,6 +17,27 @@ export default function Quiz() {
       anger: <Number>
   }`;
 
+  const Questions=`"What kind of mood carried you through the day?",
+    "Was there anything that genuinely made you smile or laugh?",
+    "How much tension did you carry in your body?",
+    "Did your thoughts feel peaceful or restless?",
+    "Were there any waves of sadness or emptiness?",
+    "How quickly did small things get under your skin?",
+    "Did you feel close to others or more distant than usual?",
+    "Was it easy to find motivation or did everything feel like a push?",
+    "Was your sleep refreshing or draining?",
+    "What emotion showed up most during your day?",
+    "Did anything feel like too much to handle?",
+    "How kind were your thoughts toward yourself?",
+    "Were you able to focus on what mattered?",
+    "What kind of energy followed you around?",
+    "Did you do anything just for yourself — something that felt good?",
+    "Did you feel hopeful or stuck when thinking about the future?",
+    "How did your body and breath feel throughout the day?",
+    "Did any anger or frustration surprise you?",
+    "Was it hard to stay present or did you feel grounded?",
+    "If your day had a color or weather, what would it be?",`;
+  
   const questions = [
     "What kind of mood carried you through the day?",
     "Was there anything that genuinely made you smile or laugh?",
@@ -62,7 +83,7 @@ export default function Quiz() {
     try {
       const response = await ai.models.generateContent({
         model: "gemini-2.0-flash",
-        contents: `${text} (${prompt})`,
+        contents: `${text} (${Questions}) (${prompt}) `,
       });
 
       const raw = response?.response?.text || response?.text;
