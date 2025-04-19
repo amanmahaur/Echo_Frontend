@@ -25,6 +25,10 @@ export default function About() {
       <p className='text-gray-300 text-lg text-center max-w-3xl leading-relaxed mt-8'>
         Whether you’re reflecting on your day or seeking support during tough times, The Echo Journal listens, analyzes, and echoes back what matters — helping you make mental wellness a daily habit.
       </p>
+      <h1 className='text-white text-4xl font-bold my-6'>About The Developer</h1>
+      <p className='text-gray-300 text-lg text-center max-w-3xl leading-relaxed'>
+        The Echo Journal is designed and developed by me Aman Kumar Mahaur an Electrical Engineering Undergrad student from NIT Bhopal using MERN stack and Gemini generative AI, for more information please contact me through my social media handles or Email.
+      </p>
     </div>
   );
 }
