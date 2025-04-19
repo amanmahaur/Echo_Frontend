@@ -110,9 +110,9 @@ export default function DailyChallenges() {
       ) : error ? (
         <p className='text-red-500'>{error}</p>
       ) : (
-        <div className='w-full max-w-2xl bg-gray-800 p-6 rounded-lg shadow-lg'>
+        <div className='w-full my-2 max-w-2xl bg-gray-800 p-6 rounded-lg shadow-lg'>
           <h2 className='text-white text-2xl mb-4'>Your Challenges for Today</h2>
-          <ul className='space-y-4'>
+          <ul className='space-y-4 my-2'>
             {challenges.map((challenge, index) => (
               <li
                 key={index}
