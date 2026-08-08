@@ -59,7 +59,7 @@ export default function DailyChallenges() {
         // Use the latest emotional levels to generate challenges
         const latestLevels = levels[levels.length - 1]; // Get the most recent emotional levels
         const aiResponse = await ai.models.generateContent({
-          model: 'gemini-2.0-flash',
+          model: 'gemini-3.5-flash',
           contents: `Based on the following emotional levels, generate 5 daily challenges to help improve the user's well-being. 
           Emotional levels: ${JSON.stringify(latestLevels)}. 
           Only return the challenges in a JSON array format like this:
