@@ -8,7 +8,7 @@ const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 async function bot(ev) {
   try {
     const response = await ai.models.generateContent({
-      model: "gemini-2.0-flash",
+      model: "gemini-3.5-flash",
       contents: `${ev} (don't make it obvious but keep the response medium length and empathetic, add emojies when necessary)`,
     });
     return response.text; // Return the response text
