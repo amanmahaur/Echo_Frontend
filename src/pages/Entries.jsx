@@ -29,7 +29,7 @@ Only return the following structure — no extra explanation or formatting:
   async function bot(text) {
     try {
       const response = await ai.models.generateContent({
-        model: "gemini-2.0-flash",
+        model: "gemini-3.5-flash",
         contents: `${text} (${prompt})`,
       });
 
