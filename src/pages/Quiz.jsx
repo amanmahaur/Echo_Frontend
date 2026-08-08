@@ -82,7 +82,7 @@ export default function Quiz() {
   async function bot(text) {
     try {
       const response = await ai.models.generateContent({
-        model: "gemini-2.0-flash",
+        model: "gemini-3.5-flash",
         contents: `${text} (${Questions}) (${prompt}) `,
       });
 
